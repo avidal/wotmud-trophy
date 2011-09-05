@@ -1,0 +1,51 @@
+<html>
+<head>
+<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-1.2.0.min.css">
+</head>
+<body>
+
+<div class='container'>
+    <h1>Trophy Analyzer</h1>
+
+    <form class='form-stacked'>
+        <div class='clearfix'>
+            <label for="trophy_input">Paste your trophy here</label>
+            <div class='input'>
+                <textarea id="trophy_input" class='xxlarge' style="height:400px"></textarea>
+                <span class='help-block'>
+                    Feel free to leave the prompts and another background
+                    noise.
+                </span>
+            </div>
+        </div>
+        <div class="actions">
+            <a class="btn primary" id="analyze_button">Analyze!</a>
+        </div>
+    </form>
+
+    <div id='output' style='display:block;'>
+        <h2>Results</h2>
+        <p>
+            Click the column headers to sort the data. Hold shift and click
+            a column header to sort by multiple columns.
+        </p>
+        <table id="output_table" class='zebra-striped'>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<script src='static/js/jquery-1.6.2.min.js'></script>
+<script src='static/js/jquery.tablesorter.min.js'></script>
+<script src='static/js/analyze.js'></script>
+</body>
+</html>
