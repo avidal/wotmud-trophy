@@ -29,17 +29,33 @@
             Click the column headers to sort the data. Hold shift and click
             a column header to sort by multiple columns.
         </p>
-        <table id="output_table" class='zebra-striped'>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Quantity</th>
-                    <th>Type</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+        <div class='row'>
+            <div class='span10 columns'>
+                <table id="output_table" class='zebra-striped'>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class='span6 columns'>
+                <h3>Summary</h3>
+                <h4>Players</h4>
+                <ul id="player_summary">
+                    <li>You slew a total of XXX players.</li>
+                    <li>XXX were unknown.</li>
+                    <li>XXX were named.</li>
+                    <li>XXX were killed once.</li>
+                    <li>XXX were killed more than once.</li>
+                    <li><strong>You killed Nash the most (14 times!)</strong></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
