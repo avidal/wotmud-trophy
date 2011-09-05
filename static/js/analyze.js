@@ -24,8 +24,8 @@ function analyze(trophy) {
      * If the name begins with a hash (#) then it is a PC.
      */
 
-    // Start by building a hash of all entries in the trophy
-    var entries = {};
+    // Start by building a list of lists for all entries in the trophy.
+    var entries = [];
 
     var lines = trophy.split("\n");
 
@@ -35,9 +35,9 @@ function analyze(trophy) {
         var matches = line.match(rx);
         if(!matches) return;
 
-        entries[matches[2]] = parseInt(matches[1], 10);
+        entries.push([matches[2], parseInt(matches[1], 10)]);
         if(matches[4]) {
-            entries[matches[4]] = parseInt(matches[3], 10);
+            entries.push([matches[4], parseInt(matches[3], 10)]);
         }
     });
 
@@ -53,7 +53,10 @@ function render_output(entries) {
     // first, empty the output table
     $body.find('tr').remove();
 
-    $.each(entries, function(name, kills) {
+    $.each(entries, function(i, entry) {
+        var name = entry[0];
+        var kills = entry[1];
+
         var type_ = 'mob';
 
         if(name.indexOf('#') == 0) {
@@ -95,19 +98,37 @@ function render_summary(entries) {
      *  kill with highest count
      */
 
-    // First, the total number of kills
+    // Kill count totals
     var total_kills = 0;
     var unknown_kills = 0;
     var known_kills = 0;
+
+    // Player kill counts
+    var players_killed = 0;
+    var unknown_players = 0;
+    var known_players = 0;
 
     var killed_once = 0;
     var killed_multiple = 0;
     var killed_most = "";
     var killed_max = 0;
 
-    $.each(entries, function(name, kills) {
+    $.each(entries, function(i, entry) {
+        var name = entry[0];
+        var kills = entry[1];
+
         if(name.indexOf("#") !== 0) return;
+
+        players_killed++;
         total_kills += kills;
+
+        if(name == '#Unknown') {
+            unknown_players++;
+            unknown_kills += kills;
+        } else {
+            known_players++;
+            known_kills += kills;
+        }
 
         if(kills == 1) {
             killed_once++;
@@ -125,13 +146,10 @@ function render_summary(entries) {
         killed_most = killed_most.substring(1);
     }
 
-    unknown_kills = entries['#Unknown'] || 0;
-    known_kills = total_kills - unknown_kills;
-
     var data = [];
-    data.push("You killed a total of " + total_kills + " players.");
-    data.push(unknown_kills + " were unknown.");
-    data.push(known_kills + " were known.");
+    data.push("You killed a total of " + players_killed + " players " + total_kills + " times.");
+    data.push(unknown_players + " unknown players were killed " + unknown_kills + " times.");
+    data.push(known_players + " known players were killed " + known_kills + " times.");
     data.push(killed_once + " were killed once.");
     data.push(killed_multiple + " were killed multiple times.");
     data.push("<strong>You killed " + killed_most + " the most (" + killed_max + " times!)</strong>");
