@@ -1,0 +1,219 @@
+* HP:Healthy MV:Full >                              ** TROPHY **
+                             ------------
+      1, a lithe woman                        1, a cloaked man
+      6, a neutered brute                     1, a muscular man
+      3, a myrddraal                          1, a snow leopard
+      1, the smuggler guard                   1, Ragnor the Bandit Chief
+      1, Hobrion Dusque                       1, a strongarm
+      3, a plains rogue                       4, a deadly woman
+      2, a small termite                      1, a giant termite
+      1, a winged beast                       1, #Intan
+      1, #Lykan                               1, #Unknown
+      1, a Seanchan Imperial guard            2, the deathwatch guard
+      1, the sul'dam                          2, a young Morat'torm
+      1, a conscript                          2, a Seanchan officer
+      1, a lopar                              1, a swarthy pirate captain
+      2, a grolm                              3, a dock hand
+      3, a Seanchan sentry                    5, a hand-covered tentacle
+      1, Kreeza, the trolloc warrior maiden      3, a burly bandit guard
+      1, the brigand trooper                  1, a boarish trolloc
+      3, a Dhjin'en trolloc                   2, Chayla
+      4, a wolfish trolloc                    1, Galnorn
+      1, the Watchman                         1, #Unknown
+
+* Press <Return> to continue, q to quit *>
+      2, the kennel keeper                   12, a slithering abomination
+      7, the fire spawn                       2, an armored sentry
+     14, a dead one                          17, a live one
+      2, a cafar                             19, a boarhound
+     15, the mantis warrior                   1, a messenger pigeon
+      1, #Santanus                            1, #Soldat
+      2, a morat'torm                         3, a mine guard
+      1, the mine overlord                    1, a cold-eyed man
+      4, a guard dog                          2, a Winged Guard Officer
+      1, #Unknown                             1, a brown stallion
+      5, an enormous bright-red salamander      1, a sluggish, leathery spider
+      2, a giant scorpion                     3, the gorgon
+      1, the Caemlyn cityguard                4, a blood worm
+      1, #Saavrid                             1, #Unknown
+      1, #Unknown                             1, #Hether
+      3, the Caemlyn cityguard                1, the Master of the Sword
+      3, an executioner                       7, the Caemlyn cityguard
+      1, Lord Captain Martyn Tallanvor       17, an elite Lion Warden
+      2, Gawyn Trakand                        5, a roan charger
+      2, an Illian Companion                  1, a torm
+      2, a moumori                            1, the seamstress
+      1, Captain Layten D'hael                6, a former Child of the Light
+
+* Press <Return> to continue, q to quit *>
+      1, the lich                             2, Roland Azaron, Chief of the Smugglers
+      1, a female rogue                       6, the smuggler guard
+      2, a cavalry officer                   12, a cavalry soldier
+      1, #Unknown                             1, a giant flying insect
+      1, a hungry trolloc                     4, a hulking mercenary commander
+      9, a veteran mercenary                  1, a man
+      1, a slithering, ebony snake            1, #Gahris
+      1, a darkfriend                         1, the large swarm of mosquitoes
+      7, a Seanchan scout                     6, a Seanchan fighter
+      1, #Unknown                             4, a timid fawn
+      1, #Unknown                             2, a water serpent
+      1, Bertain Gallenne                     1, Havien Nurelle
+      1, a Recruitment Officer for the Mayener Guard     15, a Winged Guard
+     16, an Elite Winged Guard                2, a goat-faced trolloc
+      1, #Mykal                               1, #Jayle
+      1, Captain Tariq Ibrahim                3, a Sharan warrior
+      9, a lithe Sharan guard                 5, an Aiel maiden
+      2, #Oraste                              4, #Traven
+      5, #Aldwyn                              1, a plump pheasant
+      1, a massive boar                      13, a thief
+      2, an Illian soldier                    1, #Vaughn
+      3, #Unknown                             6, a great vine
+
+* Press <Return> to continue, q to quit *>
+      2, #Unknown                            10, the mountain-dwellers' leader
+      5, a cruel slave-driver                 1, a young giant
+      2, #Ethan                               4, a skeletal wolf
+      1, #Unknown                             1, a huge infested scorpion
+      2, a wolverine                          2, a warhorse
+     30, a burly bandit                       2, #Puny
+      1, #Ciegon                              2, a parrot
+      3, an Elite Illian Companion           10, an Illian Companion sentry
+     10, a water buffalo                      2, a black hawk
+      1, #Unknown                             1, a white wolf
+      2, a large lizard                       2, a baby lizard
+      9, an Illianer steed                    1, Kiraf the vagabond leader
+      5, a hardened vagabond warrior          1, a bloodsnake
+      3, a stone dog aiel                     1, a renegade aiel warrior
+      1, an aiel wise one                     4, a maiden of the spear
+      1, a bull                               1, an aiel veteran
+     11, a Taardad warrior                    5, a hard-eyed aiel warrior
+      5, a black-veiled warrior              13, a tall dark aiel warrior
+      2, #Unknown                             4, a Dhai'mon trolloc
+      8, a Ghar'ghael trolloc                35, a scorched tree
+      4, #Stark                               3, an eagle
+      8, a grunting cave-dweller              7, a black stallion
+
+* Press <Return> to continue, q to quit *>
+      1, #Unknown                             1, #Taern
+     38, a spine-backed snake                 7, a shadow stallion
+     43, a group of gray flies                2, the cute bear cub
+      1, a robin                              1, a mule
+      9, a web-like fungus                    7, a muzzled trolloc
+      2, a beaked trolloc                     6, a hooved trolloc
+      6, a blighted deer                      1, a falcon
+      2, a bison                              3, a cow
+      4, a bloodstock stallion               11, a smug pirate
+      2, the hillmen chieftain                4, a hillman warrior
+     12, a huge, deadly spider               10, a spider
+     39, a sly, black snake                  24, the greenish slime
+      4, a gaping maw                         1, the Lizard King
+      2, a gruff bandit                       6, a brigand sentry
+     11, a zebra                              6, a seal
+     34, a giant emperor crab                 1, #Unknown
+      1, Aorik Dubane                         1, Chianna Mienne
+      2, a slimy little slug                  2, a snapping turtle
+     12, a black bear                         2, a dog
+    100, a tiger                             32, a swamp cat
+      1, the shadow knight                    4, an apparition
+      1, #Unknown                             2, Jonar Tragon
+
+* Press <Return> to continue, q to quit *>
+      1, #Terroriser                          1, #Burzon
+     14, a Ko'bal trolloc                    28, a Defender of the Stone
+      1, a fierce-looking mastiff             7, a darkhound
+     11, a floating spirit                   13, a rat
+      2, a large hound                        9, a wild dog
+      1, a giant wasp                         2, Ebony Blackwood
+    187, a twisted tree                       1, a black dog
+      2, a black cat                          1, a renegade cargomaster
+      2, a sheep                              9, a large black rat
+      1, #Calabrel                            6, a watersnake
+      2, a huge Deathwatch ogier              2, Mistress Paishain de'Lematch
+      1, #Kerian                              2, #Unknown
+      1, a stubby, hard-shelled worm         12, a man
+     21, a spotted jaguar                    32, a small dog
+     15, a cheetah                           10, #Unknown
+      8, a gray palfrey                       1, Carchton, the Outrider Captain
+      3, a country guard                      8, a woad
+      4, the brigand leader                  18, a brigand
+     25, a Murandian bandit                   9, a scuttling arachnid
+      2, Gorthel Par'tan                     10, a red-eyed raven
+     10, a flock of ravens                    1, the blight bear
+     11, a hideous trolloc                    3, a darkhound
+
+* Press <Return> to continue, q to quit *>
+      2, a huge darkhound                     1, #Raxtor
+     13, the blighted tree                    4, the blighted tree
+      1, a strong trolloc                    82, the hog
+     43, a sandsnake                          9, a blood-covered scorpion
+     16, a Dha'vol trolloc                    3, the giant queen ant
+     38, an enormous scorpion                 5, the underground mistress
+     23, an underground guard                 3, a member of the Lugard Command
+    151, a mountain-side dweller             25, an arrogant bridgeguard
+     37, a black vulture                      5, a smuggler
+      8, a pirate                             1, a ruffian
+      1, a dun mare                           1, #Venue
+     30, a mercenary                         31, a small bloodsucking insect
+     10, a gray mouse                         3, a giant bee
+      2, a raccoon                           11, a mole
+      9, the grasshopper                      3, an irritating fly
+      4, a pretty bird                       15, a deranged wolfbrother hermit
+     97, a strange lizard                    19, Rufferto, faithful dog of the sage
+     14, a grayish snake                      8, Commander Aylia Moralia
+     56, a veteran warrior                    5, a large silvery fish
+    143, a carnivorous plant                218, a two-headed serpent
+     87, a shivering tree                    83, the rabid bear
+      6, a thief                             38, a fierce scorpion
+
+* Press <Return> to continue, q to quit *>
+     31, a gara lizard                      190, a rabid wolf
+     45, a giant horned lizard              122, a recruit
+      6, a viper                            125, a bandit
+     17, a busy bee                           2, a vulture
+      5, the piranhas                         6, a croaking frog
+      4, a turtle                            53, a crab
+     31, a massive moose                    153, a vernarsh
+      1, a gazelle                            2, a Raggedy Scarecrow
+      8, a wild stallion                     35, a jaguar
+      8, a mink                             225, an elk cow
+      4, a goat                              47, a panther
+     10, the small brown bear                35, a greedy highwayman
+    500, a gull                             175, a wilted tree
+     24, the giant tarantula                  9, a giant spider
+      6, the black widow                      2, a lamb
+      4, a pudgy gopher                     106, an enormous anaconda
+     62, a large bat                        229, a frightened young thief
+    112, a blood thornbush                  119, a wispy fog
+     13, the black lizard                    31, a red fox
+      6, a beaver                            15, a badger
+     87, a handsome stag                     95, a crow
+    271, a big brown bear                   154, a lion
+
+* Press <Return> to continue, q to quit *>
+     75, a lynx                               4, a large rat
+      2, a gigantic, rabid rat              102, a giant ant
+     20, a black scorpion                   196, a cougar
+     25, a giant lobster                      4, a bull rhinoceros
+     91, a dun snake                          9, a young, agile hare
+     91, a lioness                           13, the Shadowmauler
+    249, a huge mountain lion               151, a huge grizzly bear
+     17, a small squirrel                    36, an angry black bear
+    157, the creepers                        87, the constrictor
+    133, a wild goat                         41, a ramshorned trolloc
+    212, a plains lion                      278, a brown deer
+    185, a raven                              7, a corpse
+      6, a fade                              17, a coyote
+      9, a duck                             129, a grayish-green moss
+    201, the writhing grass                   4, a puppy
+    232, a tusked pig                       485, the angry tree
+    128, the young buck                     181, a large plains bear
+     15, Smitty d'Shays, Wine Baron of the South Coast.     26, the smelly hag
+     73, a snapping gator                   122, an alligator
+    230, a waterlizard                       13, a gobbling turkey
+     51, a cackling hyena                    28, a rabbit
+    861, a rat                               14, a burly bighorn sheep
+
+* Press <Return> to continue, q to quit *>
+    163, an antelope                        6890, the ancient tree
+    164, a bobcat                           612, a forest boar
+    722, an elk
