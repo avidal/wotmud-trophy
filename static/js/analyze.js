@@ -5,7 +5,9 @@ $(function() {
         analyze(trophy);
     });
 
-    $("#output_table").tablesorter();
+    $("#output_table").tablesorter({
+        sortList: [[0,1], [2,1]]
+    });
 
 });
 
@@ -40,12 +42,13 @@ function analyze(trophy) {
     });
 
     render_output(entries);
+    render_summary(entries);
 
 }
 
 function render_output(entries) {
-    $out = $("#output_table");
-    $body = $out.find('tbody');
+    var $out = $("#output_table");
+    var $body = $out.find('tbody');
 
     // first, empty the output table
     $body.find('tr').remove();
@@ -59,13 +62,17 @@ function render_output(entries) {
         }
 
         var data = [];
+        data.push(type_);
         data.push(name);
         data.push(kills);
-        data.push(type_);
 
         var row = "<tr><td>" + data.join("</td><td>") + "</td></tr>";
         $body.append(row);
     });
 
     $out.trigger('update');
+
+    window.setTimeout(function() {
+        $out.trigger('sorton', [[[0,1], [2,1]]]);
+    }, 500);
 }
