@@ -113,6 +113,9 @@ function render_summary(entries) {
     var killed_most = "";
     var killed_max = 0;
 
+    // we track the max unknown kill differently
+    var unk_killed_max = 0;
+
     $.each(entries, function(i, entry) {
         var name = entry[0];
         var kills = entry[1];
@@ -123,6 +126,7 @@ function render_summary(entries) {
         total_kills += kills;
 
         if(name == '#Unknown') {
+            unk_killed_max = Math.max(unk_killed_max, kills);
             unknown_players++;
             unknown_kills += kills;
         } else {
@@ -136,7 +140,7 @@ function render_summary(entries) {
             killed_multiple++;
         }
 
-        if(killed_max < kills) {
+        if(name != '#Unknown' && killed_max < kills) {
             killed_max = kills;
             killed_most = name;
         }
@@ -152,6 +156,7 @@ function render_summary(entries) {
     data.push(known_players + " known players were killed " + known_kills + " times.");
     data.push(killed_once + " were killed once.");
     data.push(killed_multiple + " were killed multiple times.");
+    data.push("The highest number of unknown kills is " + unk_killed_max + ".");
     data.push("<strong>You killed " + killed_most + " the most (" + killed_max + " times!)</strong>");
 
     $out.append("<li>" + data.join("</li><li>") + "</li>");
