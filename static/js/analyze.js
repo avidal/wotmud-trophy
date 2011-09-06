@@ -11,7 +11,6 @@ $(function() {
 
 });
 
-var ENTRIES = {};
 
 function analyze(trophy) {
     /*
@@ -27,17 +26,37 @@ function analyze(trophy) {
     // Start by building a list of lists for all entries in the trophy.
     var entries = [];
 
+    // We use the name map so we can index the list efficiently on duplicate
+    // entries. Useful for combining trophies
+    var name_map = {};
+
     var lines = trophy.split("\n");
 
     var rx = /^\s+(\d+), (#?[a-z',\-\.\s]+?)(?:\s+(\d+), (#?[a-z',\.\-\s]+?))$/i;
+
+    function add_entry(name, kills) {
+
+        var idx = name_map[name];
+
+        // if the name is uknown, force the idx to -1
+        if(name == '#Unknown') idx = -1;
+
+        if(idx >= 0) {
+            entries[idx][1] += kills;
+        } else {
+            entries.push([name, kills]);
+            name_map[name] = entries.length - 1;
+        }
+
+    }
 
     $.each(lines, function(i, line) {
         var matches = line.match(rx);
         if(!matches) return;
 
-        entries.push([matches[2], parseInt(matches[1], 10)]);
+        add_entry(matches[2], parseInt(matches[1], 10));
         if(matches[4]) {
-            entries.push([matches[4], parseInt(matches[3], 10)]);
+            add_entry(matches[4], parseInt(matches[3], 10));
         }
     });
 
@@ -45,6 +64,7 @@ function analyze(trophy) {
     render_summary(entries);
 
 }
+
 
 function render_output(entries) {
     var $out = $("#output_table");
