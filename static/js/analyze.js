@@ -130,8 +130,10 @@ function render_summary(entries) {
 
     var killed_once = 0;
     var killed_multiple = 0;
-    var killed_most = "";
-    var killed_max = 0;
+
+    // Track all known player kills in an array, indexed
+    // by kill count to use as a leaderboard.
+    var leaderboard = [];
 
     // we track the max unknown kill differently
     var unk_killed_max = 0;
@@ -160,15 +162,14 @@ function render_summary(entries) {
             killed_multiple++;
         }
 
-        if(name != '#Unknown' && killed_max < kills) {
-            killed_max = kills;
-            killed_most = name;
+        if(name != '#Unknown') {
+            if(leaderboard[kills]) {
+                leaderboard[kills].push(name);
+            } else {
+                leaderboard[kills] = [name];
+            }
         }
     });
-
-    if(killed_max) {
-        killed_most = killed_most.substring(1);
-    }
 
     var data = [];
     data.push("You killed a total of " + players_killed + " players " + total_kills + " times.");
@@ -177,7 +178,37 @@ function render_summary(entries) {
     data.push(killed_once + " were killed once.");
     data.push(killed_multiple + " were killed multiple times.");
     data.push("The highest number of unknown kills is " + unk_killed_max + ".");
-    data.push("<strong>You killed " + killed_most + " the most (" + killed_max + " times!)</strong>");
+
+    // build out the runner ups by iterating over the leaderboard in reverse
+    var names;
+    var j = 0;
+    var runner_ups = [];
+    for(var i = leaderboard.length-1; i >= 0; i--) {
+        kills = i;
+        names = leaderboard[kills];
+        if(!names) continue;
+
+        // convert the list of names to remove the pound signs
+        var names_clean = [];
+        $.each(names, function(i, name) {
+            names_clean.push(name.substring(1));
+        });
+
+        // this is the highest number of kills
+        if(j == 0) {
+            data.push("<strong>You killed " + names_clean.join(", ") + " the most (" + kills + " times!)</strong>");
+        } else if(j <= 4) {
+            // we want to build the list of runner ups until we hit j == 4
+            // but not if it's only 1 kill
+            if(kills > 1) {
+                runner_ups.push(names_clean.join(", ") + " " + kills + " times");
+            }
+        }
+
+        j++;
+    }
+
+    data.push("Followed by " + runner_ups.join("; ") + ".");
 
     $out.append("<li>" + data.join("</li><li>") + "</li>");
 
