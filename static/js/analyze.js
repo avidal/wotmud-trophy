@@ -32,7 +32,7 @@ function analyze(trophy) {
 
     var lines = trophy.split("\n");
 
-    var rx = /^\s+(\d+), (#?[a-z',\-\.\s]+?)(?:\s+(\d+), (#?[a-z',\.\-\s]+?))$/i;
+    var rx = /^\s+(\d+), (#?[a-z',\-\.\s]+?)(?:\s+(\d+), (#?[a-z',\.\-\s]+?))?$/i;
 
     function add_entry(name, kills) {
 
